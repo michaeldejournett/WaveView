@@ -323,8 +323,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4966719baa26e4b0e8231a24d9bd491a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FocusMode: 1
-  m_LightEstimationMode: 0
+  m_FocusMode: -1
+  m_LightEstimationMode: -1
   m_AutoFocus: 1
   m_LightEstimation: 0
   m_FacingDirection: 1
@@ -1864,6 +1864,7 @@ GameObject:
   - component: {fileID: 1315333993}
   - component: {fileID: 1315333992}
   - component: {fileID: 1315333991}
+  - component: {fileID: 1315333994}
   m_Layer: 0
   m_Name: AR Session
   m_TagString: Untagged
@@ -1913,6 +1914,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1315333994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315333990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91693c95e102721439cdbb5475bf78ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WaveCube: {fileID: 1516266706}
+  cubeIdentifier: 0
 --- !u!1 &1516266706
 GameObject:
   m_ObjectHideFlags: 0
@@ -1926,7 +1941,7 @@ GameObject:
   - component: {fileID: 1516266708}
   - component: {fileID: 1516266707}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: WaveCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1973,7 +1988,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: f632af025a4a3654eb243981db1884f5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2011,13 +2026,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1516266706}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.49906737, y: 0.45589954, z: 0.030524313, w: 0.73631227}
-  m_LocalPosition: {x: -0.57, y: 0.97, z: 5.16}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 45, y: 83, z: 45}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1622241405
 GameObject:
   m_ObjectHideFlags: 0
